@@ -1,0 +1,83 @@
+.allPageNavigation{
+    text-align: center;
+    background-image: url('../../images/background.jpeg');
+   
+}
+
+.the_title{
+    color: white;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.links > :link{
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.links > :hover{
+    color: white;
+    font-size: large;
+    background: rgb(76, 85, 95);
+}
+
+
+.input_search{
+    padding: 8px;
+    display: flex;
+}
+
+.input_search > input{
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 3px;
+}
+
+.btnSearch{
+    border-radius: 30px;
+    padding: 8px;
+    border: 2px solid black;
+}
+
+.searchMovie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding: 0px;
+   background-image: url("../../images/backgroundSearch.jpeg");
+}
+
+.auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.auth > :link {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+

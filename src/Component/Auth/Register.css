@@ -1,0 +1,33 @@
+.registerPage{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+   margin: 0 auto;
+   margin-top: 30px;
+}
+
+.titlePage{
+   text-align: center;
+   background: rgba(21, 29, 53, 0.466);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-label{
+   color: white;
+   background: rgba(21, 29, 53, 0.466);
+   font-size: larger;
+}
+
+.form-field {
+    width: 100%;
+     box-sizing: border-box;
+}
+
+ .form-button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+ }
