@@ -5,6 +5,8 @@ import {login as loginAction} from './../../store/slices/AuthSlice'
 import "./Login.css";
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
+import { useNavigate } from 'react-router';
+
 
 
 
@@ -13,6 +15,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const dispatch = useDispatch()
   const [successLogin,setSuccessLogin] = useState(false)
+  const navigate = useNavigate()
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -25,13 +28,18 @@ function Login() {
 
   const handleClickLogin = (e) =>{
     e.preventDefault();
+   
    const loginUser = {
-    email,password
+    email:email,
+    password:password
    }
    setSuccessLogin(true)
+
    authService.login(loginUser).then(response =>{
+ 
     setTimeout(()=>{
       dispatch(loginAction(response))
+      navigate('/movie-popular')
   },1000)
 
    }).catch(e=>{

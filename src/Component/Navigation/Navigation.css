@@ -81,3 +81,19 @@
 
 
 
+.logOut{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.logOut > :hover{
+    color: white;
+    font-size: large;
+    background: rgb(76, 85, 95);
+}

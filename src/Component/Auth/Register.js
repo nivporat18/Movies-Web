@@ -30,6 +30,8 @@ export const Register = () => {
       email:email
       ,password:password
     }
+
+
     setSuccessRegister(true)
     authService.register(registerUser).then((response)=>{
       console.log("click")

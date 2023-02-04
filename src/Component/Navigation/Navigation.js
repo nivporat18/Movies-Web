@@ -30,7 +30,7 @@ try{
   const responseJson = await response.json()
   setMovie(responseJson.results)
 }catch(err){
- console.log("No Find Your Search")
+ alert("No Find Your Search")
 }
 
 }
@@ -48,6 +48,7 @@ const inputChange = (e)=>{
     <h1 className='the_title'>Cinema World</h1>
 
       {isLoggedIn && (<>
+        <Link className='logOut' to="/login" onClick={handleLogout}> Logout</Link>
 
       <div>
     <form className='input_search' onSubmit={searchMovies}> 
@@ -61,7 +62,6 @@ const inputChange = (e)=>{
     <Link to="/movie-rated"> Movie Rated</Link>
     <Link to="/tvshow-popular"> TvShow Popular</Link>
     <Link to="/tvshow-rated"> TvShow Rated</Link>
-     <Link to="/login" onClick={handleLogout}> Logout</Link>
 
     </div>
     </div>

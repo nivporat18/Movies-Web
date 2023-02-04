@@ -12,9 +12,7 @@ import { useSelector } from 'react-redux';
 
 
 function App() {
-
   const {isLoggedIn,user} = useSelector((state)=>state.auth)
-  
 
   return (
     <div>
